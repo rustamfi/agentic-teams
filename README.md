@@ -90,7 +90,7 @@ Each phase pauses for user approval if the corresponding gate was selected in st
 
 ### Team Manager Role
 
-The team manager agent is a **routing advisor**, not an orchestrator. When the build command encounters ambiguous routing decisions, it consults the team manager to assess the task and recommend which agents to invoke and in what order. The actual orchestration, gating, and iteration logic lives in the build command itself.
+The team manager agent is a **routing advisor**. When the build command encounters ambiguous routing decisions, it consults the team manager to assess the task and recommend which agents to invoke and in what order. The actual orchestration, gating, and iteration logic lives in the build command itself.
 
 ## Project Structure
 
@@ -127,7 +127,7 @@ dev-team/
 
 ## pr-review-toolkit Integration
 
-The QA agent leverages the [pr-review-toolkit](https://github.com/anthropics/claude-code/tree/main/plugins/pr-review-toolkit) plugin for deep specialized analysis. QA orchestrates these toolkit agents as sub-agents:
+**Optional dependency:** The QA agent leverages the [pr-review-toolkit](https://github.com/anthropics/claude-code/tree/main/plugins/pr-review-toolkit) plugin for deep specialized analysis. If pr-review-toolkit is installed, QA delegates specialized analysis to these agents:
 
 | Toolkit Agent | Invoked When | Analysis Focus |
 |---------------|-------------|----------------|
@@ -140,7 +140,7 @@ The QA agent leverages the [pr-review-toolkit](https://github.com/anthropics/cla
 
 QA synthesizes toolkit findings with its own integration/regression analysis into a unified report with attributed sources, enabling the build command's cross-validation step.
 
-**Optional dependency:** If pr-review-toolkit is installed, QA delegates specialized analysis to these agents. If not installed, QA gracefully falls back to performing the full review itself — no configuration needed.
+If [pr-review-toolkit] is not installed, QA gracefully falls back to performing the full review itself — no configuration needed.
 
 ## Customization
 

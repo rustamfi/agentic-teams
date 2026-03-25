@@ -1,16 +1,13 @@
 {
-  "name": "rustamfi",
+  "name": "agentic-teams",
   "owner": {
     "name": "Rustam Pirmagomedov",
-    "url": "https://github.com/efimind"
+    "url": "https://github.com/rustamfi"
   },
   "plugins": [
     {
       "name": "dev-team",
-      "source": {
-        "source": "github",
-        "repo": "rustamfi/agentic-dev-team"
-      },
+      "source": "./plugins/dev-team",
       "description": "A virtual software development team with dynamically orchestrated agents: PM, UX/UI, Architect, Backend, Frontend, QA, and Security."
     }
   ]
