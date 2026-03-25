@@ -1,6 +1,6 @@
 # Agentic Teams
 
-A Claude Code marketplace offering plugin-based agentic teams as in real company.
+A Claude Code marketplace offering agentic teams to build your real agentic company.
 
 ## Available Teams
 
