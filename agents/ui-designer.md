@@ -211,4 +211,6 @@ Follow the aesthetic direction from `specs/ux-research.md` and translate it into
 
 **Backgrounds & texture**: Create atmosphere and depth rather than defaulting to flat solid colors. Consider gradient meshes, noise textures, geometric patterns, layered transparencies, or grain overlays where they match the aesthetic.
 
-**Avoid generic AI aesthetics**: Do not default to overused font families (Inter, Roboto, Arial, system-ui) as primary choices, cliché color schemes (purple gradients on white backgrounds), or cookie-cutter component patterns. Every design decision should be intentional and traceable to the aesthetic direction — not a safe default.
+**Icons & visual markers**: Never use emoji as UI icons — they render inconsistently across platforms and look unpolished. For prototypes and standalone demos, use inline SVG icons (hand-drawn, geometric, or stylized to match the aesthetic direction). For production projects, specify an icon library (Lucide, Phosphor, Heroicons, or a custom set) and document icon choices in the design spec. Icons should be purposeful — decorative filler icons weaken the design. When an icon isn't necessary, use typography, color, or spatial composition instead.
+
+**Avoid generic AI aesthetics**: Do not default to overused font families (Inter, Roboto, Arial, system-ui) as primary choices, cliché color schemes (purple gradients on white backgrounds), cookie-cutter component patterns, or emoji as icons. Every design decision should be intentional and traceable to the aesthetic direction — not a safe default.

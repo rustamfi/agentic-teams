@@ -21,6 +21,7 @@ The goal is a working demo — not production code. Focus on visual fidelity, na
 - Commit to a cohesive color palette. Dominant colors with sharp accents over timid, evenly-distributed palettes.
 - Add atmosphere: gradient meshes, noise textures, geometric patterns, layered transparencies, or grain overlays where they serve the aesthetic.
 - Use animation for delight: staggered reveals on load, hover states that surprise, scroll-triggered effects. Prefer CSS-only; always include `prefers-reduced-motion` fallbacks.
+- Never use emoji as UI icons — they look cheap and inconsistent. Use inline SVG icons styled to match the aesthetic. If an icon isn't essential, use typography or spatial design instead.
 
 ## Output:
 

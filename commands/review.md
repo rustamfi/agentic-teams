@@ -7,9 +7,11 @@ argument-hint: "<task or code to review>"
 Run both the `qa` and `security` agents on the following task or code.
 
 First, use the `qa` agent to:
-- Review code for bugs, logic errors, and edge cases
-- Write missing tests
-- Validate acceptance criteria
+- Run specialized analysis via pr-review-toolkit agents (code review, error handling, test coverage, type design, comment quality)
+- Perform integration and regression checks
+- Write missing E2E tests and validate test coverage
+- Validate acceptance criteria and build traceability matrix
+- Produce `specs/testing.md` with unified, attributed findings
 
 Then, use the `security` agent to:
 - Perform threat modeling on the changes
