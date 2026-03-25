@@ -10,10 +10,12 @@ A Claude Code marketplace offering plugin-based agentic teams as in real company
 
 ## Install
 
-Add the marketplace and install a plugin:
+Add the marketplace:
 
 ```
 /plugin marketplace add rustamfi/agentic-teams
+
+Install the teams you are interested in:
 /plugin install dev-team@rustamfi
 ```
 

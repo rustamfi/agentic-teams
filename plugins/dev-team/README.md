@@ -49,11 +49,6 @@ In a Claude Code session, run:
 /plugin install dev-team@rustamfi
 ```
 
-Or load locally for development:
-```bash
-claude --plugin-dir /path/to/agentic-teams
-```
-
 ### Usage
 
 **Full pipeline** — build command orchestrates all needed agents through phased execution:
